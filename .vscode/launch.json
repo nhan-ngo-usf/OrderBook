@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/nhanngo/Nhan-CS/COP_4530/review_exam_3",
+      "program": "/Users/nhanngo/Nhan-CS/COP_4530/review_exam_3/build/Debug/outDebug"
+    }
+  ]
+}
