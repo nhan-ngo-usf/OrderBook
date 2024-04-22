@@ -60,7 +60,7 @@ public:
     }
     // Remove order from pendingOrders
     void removeOrder(int orderID) {
-        for (int i = 0; i < pendingOrders.size(); i++) {
+        for (size_t i = 0; i < pendingOrders.size(); i++) {
             if (pendingOrders[i].orderID == orderID) {
                 pendingOrders.erase(pendingOrders.begin() + i);
                 break;
