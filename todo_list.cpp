@@ -42,7 +42,7 @@ ACCOUNT:
 ORDER BOOK:
 - Attributes:
     - unordered_map<string, priority_queue<Order, vector<Order>, greater<Order>>> sellOrders // Symbol -> Min heap of sell orders
-    - unordered_map<string, queue<Order>> buyOrders // Symbol -> queue of buy orders
+    - unordered_map<string, priority_queue<Order, vector<Order>, less<Order>>> buyOrders // Symbol -> Max heap of buy orders
 - Functions:
     - void addOrder(Order order) // add order to buyOrders or sellOrders
     - void cancelOrder(int orderID) // remove order from buyOrders or sellOrders
